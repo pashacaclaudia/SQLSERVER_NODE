@@ -1,0 +1,7 @@
+1)user, database, password, server che rappresentano rispettivamente l'utentre che ha accesso al database di cui specifichiamo il nome, la password dell'utente e sotto server l'indirizzo
+2)Il metodo connect richiede due parametri, il primo è l'oggetto config e una arrow function che eseguirà le operazioni in connessione.
+3)si richiama il metodo connect, nel nostro caso quando il server risponde alla GET Http
+4)un oggetto sql request dal quale è possibile eseguire le varie query
+5)2 parametri, comando sql e una arrow function 
+6) in formato JSON
+7) Stiamo scrivendo il coamndo sql concatenando il contenuto del parametro whgere ricevuto dalla GET Http per utilizare il where sul nome.
