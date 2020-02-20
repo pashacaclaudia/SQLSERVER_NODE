@@ -13,18 +13,7 @@ const config = {
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    sql.connect(config, err => {
-        if (err) console.log(err);  // ... error check  
-
-        // Query
-        let sqlRequest = new sql.Request();  //Oggetto che serve a creare le query
-        sqlRequest.query('select * from dbo.[cr-unit-attributes]', (err, result) => {
-            if (err) console.log(err); // ... error checks
-            res.render('truppe', result);  //Invio il risultato
-        });
-    });
-  
-
+    res.render('index', )
 });
 
 

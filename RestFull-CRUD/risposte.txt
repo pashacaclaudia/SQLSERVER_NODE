@@ -1,7 +1,18 @@
+6.1
 1)user, database, password, server che rappresentano rispettivamente l'utentre che ha accesso al database di cui specifichiamo il nome, la password dell'utente e sotto server l'indirizzo
 2)Il metodo connect richiede due parametri, il primo è l'oggetto config e una arrow function che eseguirà le operazioni in connessione.
 3)si richiama il metodo connect, nel nostro caso quando il server risponde alla GET Http
 4)un oggetto sql request dal quale è possibile eseguire le varie query
 5)2 parametri, comando sql e una arrow function 
-6) in formato JSON
+6)In formato JSON
 7) Stiamo scrivendo il coamndo sql concatenando il contenuto del parametro whgere ricevuto dalla GET Http per utilizare il where sul nome.
+6.3
+1) Il metodo get viene utilizzato per eseguire le operazioni di lettura sulla base di dati mentre il metodo post viene utilizzato per fare operazioni di inserimento sulla base di dati
+2)Utilizzando il metodo req.body;(let nomevariabile=req.body;)
+3)I valori ottenuti dal metodo post sono di tipo JSON
+4)Utilizzando la dicitura $(nomevariabile contenente il risultato della richiesta post.nome del parametro)
+5)Per evitare che si verifichino le callback è necessario creare delle funzioni, le quali poi passiamo come parametro alle altre funzioni che richiedono una callback come parametro
+6)Con: res.status(500).json({success: false, message:'Error while connecting database', error:err});
+7)res.status(500).json({success: false, message:'Error while connecting database', error:err});
+
+1)

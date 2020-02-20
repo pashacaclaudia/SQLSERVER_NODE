@@ -1,7 +1,10 @@
+extends layout
 block content
-  p Welcome
   ul 
-    each unita in recordset
-      li 
+     each unita in recordset
+        a.link-unita(href=`users/truppe/${unita.Unit}`)
+             li #{unita.Unit} 
+             img(src=`/images/${unita.Unit}.png`)
+
 
 
