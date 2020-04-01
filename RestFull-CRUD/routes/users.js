@@ -9,9 +9,6 @@ const config = {
   database: 'fmClashRoyale', //(Nome del DB)
 }
 
-
-
-
 /*GET users listing.  */
 router.get('/', function(req, res, next) {
   sql.connect(config, err => {
